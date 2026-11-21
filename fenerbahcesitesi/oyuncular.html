@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYUNCULAR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="icon" href="Resimler/logo.png" type="image/x-icon" />
+    <style>
+        body{background-color: aqua;}
+        .banner{width:100%;height:auto;display:block;}
+        .kutu{background:#fff;border-left:6px solid #00205b;}
+        .kutu .card-header{background:#ffed00;color:#00205b;font-weight:bold;cursor:pointer;}
+        .no{display:inline-block;min-width:36px;font-weight:bold;color:#00205b;}
+        .not{font-size:13px;color:#333;}
+    </style>
+</head>
+<body>
+    <img class="banner" src="Resimler/fb.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <ul class="nav nav-tabs bg-light">
+        <li class="nav-item"> <a style="background-color:yellow;color: black;" class="nav-link" href="index.html"><b>ANASAYFA</b></a></li>
+        <li class="nav-item"> <a style="background-color:yellow;color: black;" class="nav-link" href="haberler.html"><b>HABERLER</b></a> </li>
+        <li class="nav-item dropdown">
+        <a style="background-color:yellow;color: black;" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><b>TAKIMIMIZ</b></a>
+        <div style="background-color:yellow;color: black;" class="dropdown-menu">
+        <a style="background-color:yellow;color: black;" class="dropdown-item" href="teknik.html"><b>TEKNİK HEYET</b></a>
+        <a style="background-color:yellow;color: black;" class="dropdown-item" href="oyuncular.html"><b>OYUNCULARIMIZ</b></a>
+        </div>
+        </li>
+        <li class="nav-item"> <a style="background-color:yellow;color: black;" class="nav-link" href="fikstur.html"><b>FİKSTÜR</b></a> </li>
+        <li class="nav-item"> <a style="background-color:yellow;color: black;" class="nav-link" href="fenerium.html"><b>FENERİUM</b></a> </li>
+    </ul>
+    <div class="container my-4">
+        <h3 class="text-center" style="color:#00205b;">A Takım Kadrosu 2026-2027</h3>
+        <p class="text-center not">Kaynak: UEFA Şampiyonlar Ligi 2026/27 A listesi. Bölümlere tıklayarak açıp kapatabilirsiniz.</p>
+        <div id="kadro">
+
+            <div class="card kutu mb-2">
+                <div class="card-header" data-toggle="collapse" data-target="#kaleciler">KALECİLER</div>
+                <div id="kaleciler" class="collapse show" data-parent="#kadro">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="no">13</span>Tarık Çetin</li>
+                        <li class="list-group-item"><span class="no">31</span>Ederson</li>
+                        <li class="list-group-item"><span class="no">34</span>Mert Günok</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card kutu mb-2">
+                <div class="card-header" data-toggle="collapse" data-target="#defans">DEFANS</div>
+                <div id="defans" class="collapse" data-parent="#kadro">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="no">3</span>Archie Brown</li>
+                        <li class="list-group-item"><span class="no">14</span>Yiğit Efe Demir</li>
+                        <li class="list-group-item"><span class="no">15</span>Nathan Aké</li>
+                        <li class="list-group-item"><span class="no">18</span>Mert Müldür</li>
+                        <li class="list-group-item"><span class="no">21</span>Kojo Peprah Oppong</li>
+                        <li class="list-group-item"><span class="no">22</span>Levent Mercan</li>
+                        <li class="list-group-item"><span class="no">27</span>Nélson Semedo</li>
+                        <li class="list-group-item"><span class="no">37</span>Milan Škriniar</li>
+                        <li class="list-group-item"><span class="no">77</span>Ognjen Mimović</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card kutu mb-2">
+                <div class="card-header" data-toggle="collapse" data-target="#ortasaha">ORTA SAHA</div>
+                <div id="ortasaha" class="collapse" data-parent="#kadro">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="no">5</span>İsmail Yüksek</li>
+                        <li class="list-group-item"><span class="no">6</span>Mattéo Guendouzi</li>
+                        <li class="list-group-item"><span class="no">17</span>İrfan Can Kahveci</li>
+                        <li class="list-group-item"><span class="no">28</span>Bartuğ Elmaz</li>
+                        <li class="list-group-item"><span class="no">70</span>Oğuz Aydın</li>
+                        <li class="list-group-item"><span class="no">91</span>N'Golo Kanté</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card kutu mb-2">
+                <div class="card-header" data-toggle="collapse" data-target="#forvet">FORVET</div>
+                <div id="forvet" class="collapse" data-parent="#kadro">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="no">7</span>Kerem Aktürkoğlu</li>
+                        <li class="list-group-item"><span class="no">9</span>Romelu Lukaku</li>
+                        <li class="list-group-item"><span class="no">10</span>Marco Asensio</li>
+                        <li class="list-group-item"><span class="no">11</span>Mason Greenwood</li>
+                        <li class="list-group-item"><span class="no">19</span>Vedat Muriqi</li>
+                        <li class="list-group-item"><span class="no">45</span>Dorgeles Nene</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
